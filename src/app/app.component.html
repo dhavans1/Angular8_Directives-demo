@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>
+          Angular Structural and Attribute Directives
+      </h2> 
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <button
+        class="btn btn-primary"
+        (click)="onlyOdd = !onlyOdd">Only show 
+          <span *ngIf="onlyOdd; else even">even</span> 
+          <ng-template #even><span>odd</span></ng-template>
+          numbers</button>
+      <br><br>
+      <ul class="list-group">
+        <div *ngIf="!onlyOdd">
+          <li
+            class="list-group-item"
+            *ngFor="let enum of evenNumbers"
+            [ngStyle]="{backgroundColor: 'green'}">
+            {{ enum }}
+          </li>
+        </div>
+        <div *ngIf="onlyOdd">
+          <li
+            class="list-group-item"
+            *ngFor="let onum of oddNumbers"
+            [ngClass]="{oddStyle: onlyOdd}">
+            {{ onum }}
+          </li>
+        </div>
+      </ul>
+      <ng-template [ngIf]="onlyOdd">
+        <p>Only odd</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
