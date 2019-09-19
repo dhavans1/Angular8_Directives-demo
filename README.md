@@ -1,6 +1,6 @@
-# Structural and Attribute & Custom Directives exercise
+# Structural, Attribute & Custom Directives exercise
 
-This is an angular application to showcase usage of structural(ngIf & ngFor), Attribute(ngClass & ngStyle) and Custom(greenBorder) directives provided by Angular.
+This is an angular application to showcase usage of structural(ngIf & ngFor), Attribute(ngClass & ngStyle) and Custom(directive to set element's border color) directives provided by Angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
