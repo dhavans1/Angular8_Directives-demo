@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-
+import { borderStyleDirective } from './border-style.directive';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    borderStyleDirective
   ],
   imports: [
     BrowserModule,

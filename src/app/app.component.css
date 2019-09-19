@@ -1,13 +1,20 @@
 .container {
   margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.list-group-item{
+  margin-bottom: 5px;
 }
 
 .oddStyle{
-  background-color: rgb(40, 84, 122);
-  color: white; 
+  background-color: rgb(163, 206, 245);
+  color: darkblue;
+  border-color: rgb(20, 133, 240);
 }
 
 .evenStyle{
-  background-color: antiquewhite;
+  background-color: rgb(214, 248, 182);
   color: white; 
+  /* color: rgb(124, 221, 33); */
 }
