@@ -22,7 +22,8 @@
             class="list-group-item"
             *ngFor="let enum of evenNumbers"
             [ngStyle]="{backgroundColor: 'rgb(214, 248, 182)'}"
-            greenBorder>
+            greenBorder
+            hoverTransparent>
             {{ enum }}
           </li>
         </div>
@@ -32,6 +33,7 @@
             *ngFor="let onum of oddNumbers"
             [ngClass]="{oddStyle: onlyOdd}"
             better-Highlighter
+            hoverTransparent
             >
             {{ onum }}
           </li>
