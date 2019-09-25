@@ -30,14 +30,13 @@
           <li
             class="list-group-item"
             *ngFor="let onum of oddNumbers"
-            [ngClass]="{oddStyle: onlyOdd}">
+            [ngClass]="{oddStyle: onlyOdd}"
+            better-Highlighter
+            >
             {{ onum }}
           </li>
         </div>
       </ul>
-      <ng-template [ngIf]="onlyOdd">
-        <p>Only odd</p>
-      </ng-template>
     </div>
   </div>
 </div>
