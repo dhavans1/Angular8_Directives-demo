@@ -18,7 +18,7 @@
           numbers</button>
       <br><br>
       <ul class="list-group">
-        <div *ngIf="!onlyOdd">
+        <div *customNgIf="!onlyOdd"> <!-- custom structural directive - customNgIf -->
           <li
             class="list-group-item"
             *ngFor="let enum of evenNumbers"

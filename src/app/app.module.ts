@@ -7,6 +7,7 @@ import { borderStyleDirective } from './basic-directive/border-style.directive';
 import { betterHighlighter } from './better-directive/better-directive.directive';
 import { mouseHoverDirective } from './list-hover-directive/hover-directive.directive';
 import { buttonHoverDirective } from './button-hover-directive/buttonHover.directive';
+import { customStructuralDirective } from './custom-ngIf-directive/custom-ngIf.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { buttonHoverDirective } from './button-hover-directive/buttonHover.direc
     borderStyleDirective,
     betterHighlighter,
     mouseHoverDirective,
-    buttonHoverDirective
+    buttonHoverDirective,
+    customStructuralDirective
   ],
   imports: [
     BrowserModule,
