@@ -11,7 +11,8 @@
     <div class="col-xs-12">
       <button
         class="btn btn-primary"
-        (click)="onlyOdd = !onlyOdd">Only show 
+        (click)="onlyOdd = !onlyOdd"
+        hoverColorChange>Only show 
           <span *ngIf="onlyOdd; else even">even</span> 
           <ng-template #even><span>odd</span></ng-template>
           numbers</button>
